@@ -1,8 +1,9 @@
 package com.company;
+import javax.swing.JOptionPane;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
-
+//Islam Mohamed
 public class HangMan {
 
     Player player;
@@ -10,13 +11,19 @@ public class HangMan {
     private final Scanner scanner;
     List<String> alreadyChosen;
 
-    public HangMan() {
+    public HangMan()  {
         gameWord = new Words();
         player = new Player();
         scanner = new Scanner(System.in);
         alreadyChosen = new ArrayList<>();
     }
 
+    /**
+     * startGame is a method that Initiate the game
+     * @author Islam Mohamed
+     * @Since 2020/10/27
+     * @version 1.0
+     */
     public void startGame() {
         System.out.println("*********\n" +
                 "  +---+\n" +
@@ -27,13 +34,13 @@ public class HangMan {
                 "      |\n" +
                 "*********");
         System.out.println("Welcome to HangMan!" + " Please Enter Your Name?");
-        String name = scanner.nextLine();
+        String name = JOptionPane.showInputDialog("Your Name");
         System.out.println("Welcome aboard " + name + ". Please read the Game Rules first\n" +
                 "          ****Game Rules****\n" +
                 "**You can enter one letter at a time**\n" +
                 "**You can enter the whole word if you know it**\n" +
-                "**If you try to guess the whole word and fail you will lose**" +
-                "**You will have 10 tries, use them wisely**" +
+                "**If you try to guess the whole word and fail you will lose**\n" +
+                "**You will have 10 tries, use them wisely**\n" +
                 "**Now lets have some fun and learn new words**");
         String input = "";
         player.setStartingLives();
@@ -101,7 +108,7 @@ public class HangMan {
                     }
 
                 }
-            } else if (!input.equals("Y") || !input.equals("N")) {
+            } else if (!input.equals("y") || !input.equals("n")) {
                 System.out.println(name + " Incorrect input, please follow the instructions given.");
             }
         }

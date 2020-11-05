@@ -8,6 +8,7 @@ public class Words {
             "job", "join", "key", "kick", "language", "lap", "machine", "mad", "native", "natural", "occasionally", "occupation", "painting", "pair", "quality", "quarter", "race", "range", "salt", "same", "tactic", "table",
             "unusual", "up", "upon", "upper", "urban", "volunteer", "vote", "voter", "vulnerable", "woman", "wonder", "wonderful", "wood", "word", "young", "your", "yours", "yourself", "youth" , "wrap", "write", "writer",
             "writing", "wrong"};
+
     private String gameWord;
     private int length;
     private int remaining;
@@ -89,6 +90,10 @@ public class Words {
         this.choiceInWord = choiceInWord;
     }
 
+    /**
+     * @param word To generate The word for the game.
+     * @return int length of the word.
+     */
     public int getWordLength(String word) {
         length = gameWord.length();
         return length;
@@ -100,11 +105,9 @@ public class Words {
         this.setHiddenWord("");
         for (position = 0; position < length; position++) {
             this.setHiddenWord(this.getHiddenWord() + "-");
-
         }
         System.out.print(this.getHiddenWord());
         sb = new StringBuilder(this.getHiddenWord());
-
     }
 
     public String getRandomWord() {

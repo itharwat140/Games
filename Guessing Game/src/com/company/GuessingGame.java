@@ -1,6 +1,12 @@
 package com.company;
 import java.util.Scanner;
+//Islam Mohamed
 
+/** Method used to creat the game and start it
+ * @author Islam Mohamed
+ * @since 2020-10-27
+ * @version 1.0
+ */
 public class GuessingGame {
     public static void GuessTheNumber() {
         Scanner sc = new Scanner(System.in);

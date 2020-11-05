@@ -6,6 +6,7 @@ public class Player {
     private char guessedLetter;
     private int losses;
 
+
     public int getLosses() {
         return losses;
     }

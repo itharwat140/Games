@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -19,7 +26,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Shapes" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Application.HangMan">
     <configuration name="GuessingGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -48,15 +60,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,6 +87,12 @@
       <option name="presentableId" value="Default" />
       <updated>1603902760269</updated>
       <workItem from="1603902761342" duration="62000" />
+      <workItem from="1603902903778" duration="1931000" />
+      <workItem from="1603988518104" duration="1207000" />
+      <workItem from="1604309992760" duration="28000" />
+      <workItem from="1604341728430" duration="1162000" />
+      <workItem from="1604507014438" duration="5729000" />
+      <workItem from="1604573522330" duration="2460000" />
     </task>
     <servers />
   </component>
@@ -84,9 +100,49 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1357" y="320" key="new project wizard" timestamp="1603902818293">
+    <state x="1478" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604512474119">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1357" y="320" key="new project wizard/0.0.3440.1400@0.0.3440.1400" timestamp="1603902818293" />
+    <state x="1478" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1604512474119" />
+    <state x="2235" y="427" key="#com.intellij.ide.util.MemberChooser" timestamp="1604574408554">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2235" y="427" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1604574408554" />
+    <state x="1478" y="560" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604509531786">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1478" y="560" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.3440.1400@0.0.3440.1400" timestamp="1604509531786" />
+    <state x="1500" y="455" key="FileChooserDialogImpl" timestamp="1604574367108">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1500" y="455" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1604574367108" />
+    <state width="3397" height="1242" key="GridCell.Tab.0.bottom" timestamp="1604575893035">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="3397" height="1242" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1604575893035" />
+    <state width="3397" height="1242" key="GridCell.Tab.0.center" timestamp="1604575893034">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="3397" height="1242" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1604575893034" />
+    <state width="3397" height="1242" key="GridCell.Tab.0.left" timestamp="1604575893033">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="3397" height="1242" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1604575893033" />
+    <state width="3397" height="1242" key="GridCell.Tab.0.right" timestamp="1604575893034">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="3397" height="1242" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1604575893034" />
+    <state x="1221" y="345" key="SettingsEditor" timestamp="1604510850194">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1221" y="345" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1604510850194" />
+    <state x="1357" y="320" key="new project wizard" timestamp="1604310022580">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1357" y="320" key="new project wizard/0.0.3440.1400@0.0.3440.1400" timestamp="1604310022580" />
+    <state x="1383" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1604508667477">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1383" y="315" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1604508667477" />
   </component>
 </project>
