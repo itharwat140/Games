@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Games.iml" filepath="$PROJECT_DIR$/.idea/Games.iml" />
       <module fileurl="file://$PROJECT_DIR$/Guessing Game/Guessing Game.iml" filepath="$PROJECT_DIR$/Guessing Game/Guessing Game.iml" />
       <module fileurl="file://$PROJECT_DIR$/HangMan/HangMan.iml" filepath="$PROJECT_DIR$/HangMan/HangMan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pong/Pong.iml" filepath="$PROJECT_DIR$/Pong/Pong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Snake/Snake.iml" filepath="$PROJECT_DIR$/Snake/Snake.iml" />
     </modules>
   </component>
 </project>

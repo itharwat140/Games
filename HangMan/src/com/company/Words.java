@@ -1,14 +1,18 @@
 package com.company;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
 import java.util.Random;
 
-public class Words {
+public class Words implements IWords {
 
-    private String[] wordBank ={"ability", "able", "basically", "bank", "candidate", "capacity", "defensive", "democracy", "elite", "else", "favorite", "feel", "gifted", "global", "height", "hello", "illegal", "ignore",
+    /*private String[] wordBank ={"able", "basically", "bank", "candidate", "capacity", "defensive", "democracy", "elite", "else", "favorite", "feel", "gifted", "global", "height", "hello", "illegal", "ignore",
             "job", "join", "key", "kick", "language", "lap", "machine", "mad", "native", "natural", "occasionally", "occupation", "painting", "pair", "quality", "quarter", "race", "range", "salt", "same", "tactic", "table",
             "unusual", "up", "upon", "upper", "urban", "volunteer", "vote", "voter", "vulnerable", "woman", "wonder", "wonderful", "wood", "word", "young", "your", "yours", "yourself", "youth" , "wrap", "write", "writer",
-            "writing", "wrong"};
+            "writing", "wrong"};*/
 
+    private String[] wordBank;
     private String gameWord;
     private int length;
     private int remaining;
@@ -17,6 +21,20 @@ public class Words {
     private int numberOfGuessedLetters;
     private String hiddenWord;
     private StringBuilder sb;
+
+    public Words() {
+        try {
+            File file = new File("HangMan/src/com/company/Words");
+            Scanner sc = new Scanner(file);
+            this.wordBank = sc.nextLine().split(", ");
+            Arrays.sort(wordBank);
+            //Arrays.sort(wordBank, Collections.reverseOrder());
+        } catch (FileNotFoundException e) {
+            System.err.println("Can not find the required data from file");
+        } catch (Exception exception) {
+            System.err.println("Can not open or read words file");
+        }
+    }
 
     public StringBuilder getSb() {
         return sb;

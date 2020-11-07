@@ -1,13 +1,17 @@
 package com.company;
 import javax.swing.JOptionPane;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 //Islam Mohamed
+
 public class HangMan {
 
     Player player;
-    Words gameWord;
+    IWords gameWord;
     private final Scanner scanner;
     List<String> alreadyChosen;
 
@@ -25,6 +29,7 @@ public class HangMan {
      * @version 1.0
      */
     public void startGame() {
+
         System.out.println("*********\n" +
                 "  +---+\n" +
                 "  |   |\n" +
@@ -69,7 +74,7 @@ public class HangMan {
                     gameWord.setChoiceInWord((gameWord.getGameWord().indexOf(input)) != -1);
                     if (alreadyChosen.contains(input)) {
                         System.out.println(name + " Please type a letter.");
-                        System.out.println(gameWord.getSb().toString());
+                            System.out.println(gameWord.getSb().toString());
                     }
                     else if (input.length() > 1 && input.equals(gameWord.getGameWord())) {
                         System.out.println("Bravo!" + name + " You guessed the word correctly. You win!");
@@ -113,8 +118,7 @@ public class HangMan {
             }
         }
     }
-    public static void main(String[] args)
-    {
+    public static void main(String[] args)  {
         HangMan newGame = new HangMan();
         newGame.startGame();
     }
